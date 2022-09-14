@@ -7,7 +7,7 @@
 // ["1234", "1567", "-2", "computer science"] -> ["-2"]
 // ["Russia", "Denmark", "Kazan"] -> []
 
-string[] arrayOne = new string[] { "hello", "2", "world", ":-)" };
+string[] arrayOne = new string[] {"Russia", "Denmark", "Kazan"};
 string[] arrayTwo = new string[arrayOne.Length];
 
 void FillArray(string[] array1, string[] array2)
@@ -30,3 +30,6 @@ void PrintArray(string[] array)
         Console.WriteLine($"{array[i]} ");
     }
 }
+
+FillArray(arrayOne, arrayTwo);
+PrintArray(arrayTwo);
