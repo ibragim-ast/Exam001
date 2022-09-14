@@ -10,5 +10,16 @@
 string[] arrayOne = new string[]{"hello", "2", "world", ":-)"};
 string[] arrayTwo = new string[arrayOne.Length];
 
-
+void FillArray(string[] array1, string[] array2)
+{
+    int count = 0;
+    for (int i = 0; i < array1.Length; i++)
+    {
+        if (array1[i].Length <= 3)
+        {
+            array2[count] = array1[i];
+            count++;
+        }
+    }
+}
 
